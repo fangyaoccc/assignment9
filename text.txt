@@ -1,0 +1,27 @@
+1) What is class constructor and why is it needed?
+
+Constructors are a special kind of method. They have three peculiarities:
+ 1.A constructor must have the same name as the class itself.
+ 2.Constructors do not have a return type—not even void.
+ 3.Constructors are invoked using the new operator when an object is created. 
+Constructors play the role of initializing objects.
+
+2) What is the meaning of the following access modifiers: “public”, “private”, “protected”, and “default”?
+
+-public: This modifier allows the class, method, or variable to be accessed from any other class or package. It provides the least restriction on access.
+-private: This modifier restricts the access to the class, method, or variable to its own class only. It provides the highest level of encapsulation.
+-protected: This modifier allows the class, method, or variable to be accessed within its own class, by subclasses of its class, and by classes in the same package.
+-default (no modifier): If no access modifier is specified, the default access level is used, which allows access to the class, method, or variable from any other class in the same package.
+
+3) What is the meaning of the following non-access modifiers: “final” and “abstract”?
+
+-final: This modifier can be applied to classes, methods, and variables. A final class cannot be subclassed, a final method cannot be overridden by subclasses, 
+and a final variable cannot be reassigned once it has been initialized. 
+-abstract: This modifier can be applied to classes and methods. An abstract class cannot be instantiated directly, and it exists to be subclassed, 
+often containing abstract methods. An abstract method is a method that is declared without an implementation; the implementation must be provided by subclasses. 
+abstract is used to create a class hierarchy that enforces a certain protocol for all subclasses.
+
+4) What is a Java package?
+
+A Java package is a mechanism for organizing Java classes into namespaces, providing a unique enclosure for classes and interfaces to avoid naming conflicts and to facilitate modular 
+programming and access control.
